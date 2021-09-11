@@ -78,5 +78,6 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 'off',
     'react/no-children-prop': 'off',
     '@next/next/no-img-element': 'off',
+    '@next/next/no-document-import-in-page': 'off',
   },
 };
