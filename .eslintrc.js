@@ -79,5 +79,6 @@ module.exports = {
     'react/no-children-prop': 'off',
     '@next/next/no-img-element': 'off',
     '@next/next/no-document-import-in-page': 'off',
+    'react/require-default-props': 'off',
   },
 };
