@@ -1,15 +1,22 @@
-import { Flex, Image, Heading, Text } from '@chakra-ui/react';
+import { Flex, Image, Heading, useMediaQuery, Text } from '@chakra-ui/react';
 
 export function BannerHome() {
+  const [isLargerThan1200] = useMediaQuery('(min-width: 1200px)');
+
   return (
     <Flex
       w="100%"
-      maxW={1480}
       pb={['0px', '33px']}
       bgImage="/Background-home.png"
       bgSize="cover"
     >
-      <Flex w="100%" maxW={1480} m={['20px', '80px']} position="relative">
+      <Flex
+        w="90%"
+        maxW={1480}
+        mx={['20px', 'auto']}
+        my="80px"
+        position="relative"
+      >
         <Flex flexDir="column" w="100%">
           <Heading
             maxW="426px"
@@ -32,13 +39,14 @@ export function BannerHome() {
           </Text>
         </Flex>
 
-        <Image
-          src="/Airplane.png"
-          display={['none', 'none', 'none', 'block']}
-          position="absolute"
-          top="20px"
-          right="0px"
-        />
+        {isLargerThan1200 && (
+          <Image
+            src="/Airplane.png"
+            position="absolute"
+            top="20px"
+            right="0px"
+          />
+        )}
       </Flex>
     </Flex>
   );
