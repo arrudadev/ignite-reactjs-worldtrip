@@ -5,10 +5,10 @@ import { TravelCard } from './TravelCard';
 export function TravelTypes() {
   return (
     <SimpleGrid
-      w="100%"
+      w="90%"
       maxW={1480}
-      p={['20px', '80px']}
-      mt="50px"
+      mt="130px"
+      mx={['20px', 'auto']}
       spacing={8}
       minChildWidth="160px"
       justifyItems="center"
