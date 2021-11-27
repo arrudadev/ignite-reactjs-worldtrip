@@ -6,6 +6,7 @@ import { Carousel } from '../components/Carousel';
 import { CarouselItem } from '../components/Carousel/CarouselItem';
 import { Header } from '../components/Header';
 import { TravelTypes } from '../components/TravelTypes';
+import { continents } from '../lib/storage';
 
 export default function Home() {
   return (
@@ -35,53 +36,15 @@ export default function Home() {
       </Flex>
 
       <Carousel>
-        <SwiperSlide>
-          <CarouselItem
-            backgroundImage="europe.png"
-            title="Europa"
-            subtitle="O continente mais antigo."
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CarouselItem
-            backgroundImage="north_america.jpg"
-            title="America do Norte"
-            subtitle="A América do Norte corresponde à parte norte do continente americano."
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CarouselItem
-            backgroundImage="south_america.jpg"
-            title="America do Sul"
-            subtitle="A América do Sul corresponde à parte sul do continente americano."
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CarouselItem
-            backgroundImage="asia.jpg"
-            title="Ásia"
-            subtitle="A Ásia é considerado o continente mais extenso territorialmente e o mais populoso também."
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CarouselItem
-            backgroundImage="africa.jpg"
-            title="África"
-            subtitle="Considerada o berço da humanidade."
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CarouselItem
-            backgroundImage="oceania.jpg"
-            title="Oceânia"
-            subtitle="A Oceania é um continente situado entre os oceanos Índico e Pacífico, a sudeste da Ásia."
-          />
-        </SwiperSlide>
+        {continents.map(continent => (
+          <SwiperSlide>
+            <CarouselItem
+              backgroundImage={continent.continent_image}
+              title={continent.title}
+              subtitle={continent.subtitle}
+            />
+          </SwiperSlide>
+        ))}
       </Carousel>
     </>
   );
