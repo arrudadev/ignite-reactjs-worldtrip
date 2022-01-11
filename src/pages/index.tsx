@@ -37,11 +37,12 @@ export default function Home() {
 
       <Carousel>
         {continents.map(continent => (
-          <SwiperSlide>
+          <SwiperSlide key={continent.slug}>
             <CarouselItem
               backgroundImage={continent.continent_image}
               title={continent.title}
               subtitle={continent.subtitle}
+              slug={continent.slug}
             />
           </SwiperSlide>
         ))}

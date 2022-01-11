@@ -31,6 +31,7 @@ export function Header({ showBackButton = false }: HeaderProps) {
           left={['0', '20']}
           marginRight={['10px', '0px']}
           onClick={() => router.back()}
+          cursor="pointer"
         />
       )}
 
