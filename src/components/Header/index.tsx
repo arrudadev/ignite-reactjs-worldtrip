@@ -17,7 +17,7 @@ export function Header({ showBackButton = false }: HeaderProps) {
       alignItems="center"
       justifyContent="center"
       w="100%"
-      maxW={1480}
+      maxW="1600px"
       h="100"
       mx="auto"
       px={['3', '6']}
@@ -28,7 +28,7 @@ export function Header({ showBackButton = false }: HeaderProps) {
           as={FiChevronLeft}
           fontSize="32"
           position={['relative', 'absolute']}
-          left={['0', '20']}
+          left={['0', '30px']}
           marginRight={['10px', '0px']}
           onClick={() => router.back()}
           cursor="pointer"
