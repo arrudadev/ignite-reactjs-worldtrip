@@ -7,6 +7,7 @@ import { Box, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
 
 import { Continent as ContinentType } from '../../@types/index';
 import { BannerDetail } from '../../components/Banner/Detail';
+import { ContinentDetail } from '../../components/ContinentDetail';
 import { Header } from '../../components/Header';
 import { getContinentBySlug } from '../../lib/getContinentBySlug';
 
@@ -41,50 +42,11 @@ export default function Continent({ continent }: ContinentProps) {
             justifyContent="space-around"
             w="100%"
           >
-            <Flex flexDir="column" alignItems="center">
-              <Text
-                fontSize="48px"
-                fontWeight="600"
-                lineHeight="72px"
-                color="yellow.500"
-              >
-                50
-              </Text>
+            <ContinentDetail count="50" description="países" />
 
-              <Text fontSize="24px" fontWeight="600" lineHeight="36px">
-                países
-              </Text>
-            </Flex>
+            <ContinentDetail count="60" description="línguas" />
 
-            <Flex flexDir="column" alignItems="center">
-              <Text
-                fontSize="48px"
-                fontWeight="600"
-                lineHeight="72px"
-                color="yellow.500"
-              >
-                60
-              </Text>
-
-              <Text fontSize="24px" fontWeight="600" lineHeight="36px">
-                línguas
-              </Text>
-            </Flex>
-
-            <Flex flexDir="column" alignItems="center">
-              <Text
-                fontSize="48px"
-                fontWeight="600"
-                lineHeight="72px"
-                color="yellow.500"
-              >
-                27
-              </Text>
-
-              <Text fontSize="24px" fontWeight="600" lineHeight="36px">
-                cidades +100
-              </Text>
-            </Flex>
+            <ContinentDetail count="27" description="cidades +100" />
           </Flex>
         </Flex>
 
