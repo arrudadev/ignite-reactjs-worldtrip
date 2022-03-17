@@ -30,13 +30,17 @@ export default function Continent({ continent }: ContinentProps) {
 
       <Box maxW="1600px" h="100%" mt="80px" mx="auto" px={['4', '10']}>
         <Flex
-          flexDir={['column', 'row']}
+          flexDir={['column', 'column', 'column', 'row']}
           alignItems="center"
           justifyContent="space-between"
         >
-          <Text maxW="800px">{continent.about}</Text>
+          <Text maxW="900px">{continent.about}</Text>
 
-          <Flex justifyContent="space-around" w="100%">
+          <Flex
+            flexDir={['column', 'row']}
+            justifyContent="space-around"
+            w="100%"
+          >
             <Flex flexDir="column" alignItems="center">
               <Text
                 fontSize="48px"
@@ -90,9 +94,13 @@ export default function Continent({ continent }: ContinentProps) {
           </Heading>
 
           <Box mt="40px">
-            <SimpleGrid columns={[1, 4]} spacing={[5, 10]} my={['5', '45px']}>
+            <SimpleGrid
+              minChildWidth="256px"
+              spacing={[5, 10]}
+              my={['5', '45px']}
+            >
               {[1, 2, 3, 4, 5].map((_, index) => (
-                <Box w="256px" mx={['auto', '0']} bgColor="white" key={index}>
+                <Box mx={['auto', '0']} bgColor="white" key={index}>
                   <Image
                     borderTopRadius="4"
                     src="/continents/europe.png"
