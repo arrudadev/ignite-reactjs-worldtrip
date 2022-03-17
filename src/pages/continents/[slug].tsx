@@ -1,12 +1,11 @@
-import ReactCountryFlag from 'react-country-flag';
-
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 
-import { Box, Flex, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react';
 
 import { Continent as ContinentType } from '../../@types/index';
 import { BannerDetail } from '../../components/Banner/Detail';
+import { CityCard } from '../../components/CityCard';
 import { ContinentDetail } from '../../components/ContinentDetail';
 import { Header } from '../../components/Header';
 import { getContinentBySlug } from '../../lib/getContinentBySlug';
@@ -62,46 +61,13 @@ export default function Continent({ continent }: ContinentProps) {
               my={['5', '45px']}
             >
               {[1, 2, 3, 4, 5].map((_, index) => (
-                <Box mx={['auto', '0']} bgColor="white" key={index}>
-                  <Image
-                    borderTopRadius="4"
-                    src="/continents/europe.png"
-                    alt="Europe"
-                    w="100%"
-                    h="173"
-                    objectFit="cover"
-                  />
-                  <Flex
-                    justify="space-between"
-                    align="center"
-                    p={6}
-                    border="1px"
-                    borderColor="#FFBA08"
-                    borderTop="0"
-                    borderBottomRadius="4"
-                  >
-                    <Flex direction="column">
-                      <Heading as="h3" fontSize="xl" fontWeight="600" mb={3}>
-                        Europe
-                      </Heading>
-                      <Text color="gray.500" fontSize="md" fontWeight="500">
-                        Europe
-                      </Text>
-                    </Flex>
-
-                    <ReactCountryFlag
-                      style={{
-                        fontSize: '2em',
-                        lineHeight: '2em',
-                        borderRadius: '50%',
-                        objectFit: 'cover',
-                      }}
-                      aria-label="Europe"
-                      countryCode="GB"
-                      svg
-                    />
-                  </Flex>
-                </Box>
+                <CityCard
+                  key={index}
+                  image="europe.png"
+                  name="Europe"
+                  description="Europe"
+                  countryCode="GB"
+                />
               ))}
             </SimpleGrid>
           </Box>
