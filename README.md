@@ -1,6 +1,6 @@
 <h1 align="center">
   <div style="display: inline-block;">
-    <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/logo.png" height="100" width="100" />
+    <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/logo.png" />
   </div>
   Worldtrip - Ignite ReactJS
   <br>
