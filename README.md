@@ -20,3 +20,9 @@
   <a href="https://github.com/arrudadev/ignite-reactjs-worldtrip/issues">Report Bug</a> •
   <a href="https://github.com/arrudadev/ignite-reactjs-worldtrip/issues">Request Feature</a>
 </p>
+
+<h2 id="about-the-project"> :pencil: About The Project</h2>
+
+<p align="justify">
+  This project is challenge to create a next js project from scratch using chakra-ui and make the application responsive.
+</p>
