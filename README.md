@@ -26,3 +26,13 @@
 <p align="justify">
   This project is challenge to create a next js project from scratch using chakra-ui and make the application responsive.
 </p>
+
+<h2 id="technologies"> :computer: Technologies</h2>
+
+This project was developed with the following technologies:
+
+- [React](https://reactjs.org)
+- [NextJs](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Swiper](https://swiperjs.com/react)
