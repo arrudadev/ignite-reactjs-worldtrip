@@ -27,9 +27,21 @@
 
 Click to expand.<br>
 
-| Home | Home - Carouse | Continent | Continent - cities |
+| Home | Home - Carousel | Continent | Continent - cities |
 | --- | --- | --- | --- |
 | <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/home.png" width="100%" alt="Home" /> | <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/home-carousel.png" width="100%" alt="Home Carousel" /> | <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/continent-page.png" width="100%" alt="Continent" /> | <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/continent-page-cities.png" width="100%" alt="Continent Cities" /> |
+
+<h2 id="table-of-contents"> :pushpin: Table of Contents</h2>
+
+* [About The Project](#about-the-project)
+* [Technologies](#technologies)
+* [Getting Started](#getting-started)
+   * [Prerequisites](#prerequisites)
+   * [Installation](#installation)
+   * [Usage](#usage)
+* [Contributing](#contributing)
+* [Collaborators](#collaborators)
+* [License](#license)
 
 <h2 id="about-the-project"> :pencil: About The Project</h2>
 
