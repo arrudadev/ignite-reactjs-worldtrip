@@ -21,6 +21,8 @@
   <a href="https://github.com/arrudadev/ignite-reactjs-worldtrip/issues">Request Feature</a>
 </p>
 
+<img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/cover.gif" height="500" width="100%" alt="cover" />
+
 <h2 id="about-the-project"> :pencil: About The Project</h2>
 
 <p align="justify">
