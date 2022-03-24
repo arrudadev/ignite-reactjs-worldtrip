@@ -23,6 +23,14 @@
 
 <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/cover.gif" height="500" width="100%" alt="cover" />
 
+<h2 id="screenshots"> :camera: Screenshots</h2>
+
+Click to expand.<br>
+
+| Home | Home - Carouse | Continent | Continent - cities |
+| --- | --- | --- | --- |
+| <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/home.png" width="100%" alt="Home" /> | <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/home-carousel.png" width="100%" alt="Home Carousel" /> | <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/continent-page.png" width="100%" alt="Continent" /> | <img src="https://raw.githubusercontent.com/arrudadev/ignite-reactjs-worldtrip/main/.github/assets/continent-page-cities.png" width="100%" alt="Continent Cities" /> |
+
 <h2 id="about-the-project"> :pencil: About The Project</h2>
 
 <p align="justify">
