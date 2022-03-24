@@ -5,21 +5,21 @@ import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
 type CityCardProps = {
   image: string;
   name: string;
-  description: string;
+  countryName: string;
   countryCode: string;
 };
 
 export function CityCard({
   image,
   name,
-  description,
+  countryName,
   countryCode,
 }: CityCardProps) {
   return (
     <Box mx={['auto', '0']} bgColor="white">
       <Image
         borderTopRadius="4"
-        src={`/continents/${image}`}
+        src={`/cities/${image}`}
         alt={name}
         w="100%"
         h="173"
@@ -40,7 +40,7 @@ export function CityCard({
           </Heading>
 
           <Text color="gray.500" fontSize="md" fontWeight="500">
-            {description}
+            {countryName}
           </Text>
         </Flex>
 

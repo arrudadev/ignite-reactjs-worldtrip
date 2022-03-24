@@ -60,13 +60,13 @@ export default function Continent({ continent }: ContinentProps) {
               spacing={[5, 10]}
               my={['5', '45px']}
             >
-              {[1, 2, 3, 4, 5].map((_, index) => (
+              {continent.cities_100_plus.map((city, index) => (
                 <CityCard
                   key={index}
-                  image="europe.png"
-                  name="Europe"
-                  description="Europe"
-                  countryCode="GB"
+                  image={city.city_image}
+                  name={city.city_name}
+                  countryName={city.country_name}
+                  countryCode={city.country_code}
                 />
               ))}
             </SimpleGrid>
